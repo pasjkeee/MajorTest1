@@ -19,6 +19,8 @@ func main() {
 	fmt.Fprintf(conn, "Hi UDP Server")
 
 	channel := make(chan interface{}, 1)
+	
+	//Check some notes from server
 
 	go func(in chan interface{}) {
 
@@ -35,6 +37,8 @@ func main() {
 	}(channel)
 
 	enterdesWords := ""
+	
+	//Check some words from user console
 
 	go func() {
 		for {
